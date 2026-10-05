@@ -564,7 +564,7 @@
     </div>
 
     <section class="card active" id="page1">
-      <h2>第一關：價值選擇－挑戰「經彩青春協奏曲」Wordwall 遊戲</h2>
+      <h2>第一關：挑戰「經彩青春協奏曲」Wordwall 遊戲</h2>
       <p class="hint">點選「開始」，進行遊戲，時限 5 分鐘，錯誤機會 3 次。遊戲結束，將「得分」填入下方欄位，檢核是否通關。</p>
 
       <div class="wordwall-stage">
@@ -595,11 +595,11 @@
         <div class="mission-grid">
           <div class="mission-card">1. 最認同的概念</div>
           <div class="mission-card">2. 最喜歡的風格</div>
-          <div class="mission-card">3. 最獨特的徽章</div>
+          <div class="mission-card">3. 最獨特的觀點</div>
         </div>
       </div>
       <div class="nav">
-        <button class="btn secondary" onclick="showPage(1)">回到遊戲</button>
+        <button class="btn secondary" onclick="showPage(1)">回到第一關</button>
         <button class="btn primary" onclick="showPage(3)">開始製作</button>
       </div>
     </section>
@@ -685,18 +685,19 @@
   <script>
     const topic = {
       displayTitle: '"經"彩青春Yes－高中',
+      badgeTitle: '經彩青春協奏曲',
       axis: '從 SDGs 的健康與福祉、消除貧窮與性別平等出發，理解經前症候群與經期支持、月經貧窮、生理用品可近性，以及月經平權與尊嚴。',
-      passScore: 10,
+      passScore: 9,
       slogans: [
         '同理經前症候群',
-        '經期不適多關心',
         '經期保健補元氣',
+        '經期不適多關心',
+        '月經知識從小學',
         '生理用品共享盒',
         '經期用品足無憂',
-        '月經知識不貧乏',
         '月經平權我倡議',
-        '月經友善我參與',
-        '月經尊嚴我守護'
+        '用品免費我支持',
+        '月經尊嚴齊守護'
       ]
     };
 
@@ -873,12 +874,12 @@
 1. 一定要清楚出現我上傳照片中的人像，並且讓照片中的人物成為整張圖的主體與視覺焦點。
 2. 不可以忽略、替換或弱化上傳照片中的人物；若我上傳的是單人照，就以該人物為主角；若我上傳的是多人照，請保留主要人物特徵並讓人物群像成為主體。
 3. 成品必須是「圓形徽章」構圖，不可做成方形海報、一般插畫或其他版型。
-4. 圓形徽章的上端必須清楚出現文字：「經彩青春養成記」。
+4. 圓形徽章的上端必須清楚出現文字：「${topic.badgeTitle}」。
 5. 圓形徽章的下端必須清楚出現我選擇的標語：「${slogan}」。
 6. 文字一定要完整、正確、清楚可讀，不可改字、漏字，也不可用其他句子取代。
 
 【主題名稱】
-「${topic.displayTitle}」
+「${topic.badgeTitle}」
 
 【主題核心】
 ${topic.axis}
@@ -901,10 +902,9 @@ ${style.prompt}
 
 【徽章構圖要求】
 1. 使用圓形徽章構圖，人物位於中央並成為主視覺。
-2. 上端放置「經彩青春養成記」，下端放置「${slogan}」，兩段文字都要清楚融入圓形徽章外圈或上、下緣設計。
-3. 主題名稱「${topic.displayTitle}」可作為較小的補充文字，但不可取代上端與下端的指定標語。
-4. 保持人物、上端標語、下端標語與裝飾元素之間的層級清楚。
-5. 成品要有完整徽章感，適合成果展示或校園倡議使用。
+2. 上端放置「${topic.badgeTitle}」，下端放置「${slogan}」，兩段文字都要清楚融入圓形徽章外圈或上、下緣設計。
+3. 保持人物、上端標語、下端標語與裝飾元素之間的層級清楚。
+4. 成品要有完整徽章感，適合成果展示或校園倡議使用。
 
 請生成一張友善、正向、人物清楚、文字正確、構圖完整的圓形青春倡議徽章圖片。`;
     }
