@@ -832,7 +832,7 @@
         return;
       }
 
-      if(score>=topic.passScore){
+      if(score===topic.passScore){
         state.gamePassed=true;
         msg.textContent='通關成功！可以進入下一關「表達立場」。';
         msg.classList.add('ok');
